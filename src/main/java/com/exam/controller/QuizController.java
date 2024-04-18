@@ -22,7 +22,8 @@ import com.exam.service.QuizService;
 @RestController
 @RequestMapping("/quiz")
 //@CrossOrigin(origins = "http://localhost:4200")
-@CrossOrigin(origins = {"http://13.49.19.219", "http://localhost:59537","http://localhost:4200"})
+//@CrossOrigin(origins = {"http://13.49.19.219", "http://localhost:59537","http://localhost:4200"})
+@CrossOrigin(origins = "*")
 public class QuizController {
 	
 	@Autowired

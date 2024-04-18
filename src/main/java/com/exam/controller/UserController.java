@@ -27,7 +27,8 @@ import jakarta.annotation.PostConstruct;
 @RestController
 @RequestMapping("/user")
 //@CrossOrigin(origins = "http://localhost:4200")
-@CrossOrigin(origins = {"http://13.49.19.219", "http://localhost:59537","http://localhost:4200"})
+//@CrossOrigin(origins = {"http://13.49.19.219", "http://localhost:59537","http://localhost:4200"})
+@CrossOrigin(origins = "*")
 public class UserController {
 	
 	@Autowired

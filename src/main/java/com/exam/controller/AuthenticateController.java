@@ -23,7 +23,8 @@ import com.exam.service.impl.UserDetailsServiceImp;
 
 @RestController
 //@CrossOrigin(origins = "http://localhost:4200")
-@CrossOrigin(origins = {"http://13.49.19.219", "http://localhost:59537","http://localhost:4200"})
+//@CrossOrigin(origins = {"http://13.49.19.219", "http://localhost:59537","http://localhost:4200","snazzy-marzipan-68443b.netlify.app"})
+@CrossOrigin(origins = "*")
 public class AuthenticateController {
 	
 	@Autowired
