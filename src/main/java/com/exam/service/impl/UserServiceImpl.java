@@ -120,7 +120,7 @@ public class UserServiceImpl implements UserService{
 		userRoleSet.add(userRole);
 		
 		List<User> local = userRepository.findAll();
-		if(local == null)
+		if(local.isEmpty())
 		{
 			User user1 =  createUser(user,userRoleSet);
 			System.out.println(user1.getUsername());
