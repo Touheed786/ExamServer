@@ -16,7 +16,7 @@ import com.exam.repo.UserRepository;
 import com.exam.service.UserService;
 
 @SpringBootApplication
-public class ExamserverApplication implements CommandLineRunner{
+public class ExamserverApplication{
 	
 	@Autowired
 	private UserService userService;
@@ -29,12 +29,13 @@ public class ExamserverApplication implements CommandLineRunner{
 
 	public static void main(String[] args) {
 		SpringApplication.run(ExamserverApplication.class, args);
+		System.out.println("Application is Started");
+
 	}
 
-	@Override
-	public void run(String... args) throws Exception {
-		System.out.println("Application is Started");
-		
+//	@Override
+//	public void run(String... args) throws Exception {
+
 		
 //		User user = new User();
 //		user.setFirstName("Allen");
@@ -62,6 +63,6 @@ public class ExamserverApplication implements CommandLineRunner{
 //		}
 		
 
-	}
+//	}
 
 }
