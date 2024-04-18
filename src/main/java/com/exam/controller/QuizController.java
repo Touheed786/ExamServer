@@ -23,7 +23,7 @@ import com.exam.service.QuizService;
 @RequestMapping("/quiz")
 //@CrossOrigin(origins = "http://localhost:4200")
 //@CrossOrigin(origins = {"http://13.49.19.219", "http://localhost:59537","http://localhost:4200"})
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = {"http://13.49.19.219", "http://localhost:59537","http://localhost:4200","https://6621634ff050a106eb966a6c--snazzy-marzipan-68443b.netlify.app/"})
 public class QuizController {
 	
 	@Autowired
